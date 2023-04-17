@@ -10,6 +10,7 @@ public class PizzaGui extends JFrame{
 
     public PizzaGui(){
         super("Pummarola");
+        //ciao
         
     }
 }
