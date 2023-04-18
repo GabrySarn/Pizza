@@ -22,30 +22,47 @@ public class PizzaGui extends JFrame implements ActionListener {
 
     private JLabel lblImg;
 
+    private String pizza = "Pizza ";
+
     public PizzaGui() {
         super("Pummarola");
         setLayout(new FlowLayout());
+        
+        for (int i = 0; i < impasti.size(); i++) {
+            btnImpasti.add(new JButton(impasti.get(i)));
+            btnImpasti.get(i).addActionListener(e->(
+                public void actionPerformed(){
+                    pizza+= e.getActionCommand();
+                    lblImg.setIcon(new ImageIcon(pizza + ".png"));
+                }
+            ));
+            add(btnImpasti.get(i));
+        }
+
+        for (int i = 0; i < salse.size(); i++) {
+            btnSalse.add(new JButton(salse.get(i)));
+            btnSalse.get(i).addActionListener(e->(
+                public void actionPerformed(){
+                      pizza += e.getActionCommand();
+                    lblImg.setIcon(new ImageIcon(pizza + ".png"));
+                }
+            ));
+            add(btnSalse.get(i));
+        }
 
         for (int i = 0; i < carni.size(); i++) {
             btnCarni.add(new JButton(carni.get(i)));
-            //btnCarni.get(i).addActionListener(null);
+            btnCarni.get(i).addActionListener(null);
             add(btnCarni.get(i));
         }
+
         for (int i = 0; i < verdure.size(); i++) {
             btnVerdure.add(new JButton(verdure.get(i)));
-            //btnVerdure.get(i).addActionListener(null);
+            btnVerdure.get(i).addActionListener(null);
             add(btnVerdure.get(i));
         }
-        for (int i = 0; i < salse.size(); i++) {
-            btnSalse.add(new JButton(salse.get(i)));
-            //btnSalse.get(i).addActionListener(null);
-            add(btnSalse.get(i));
-        }
-        for (int i = 0; i < impasti.size(); i++) {
-            btnImpasti.add(new JButton(impasti.get(i)));
-            //btnImpasti.get(i).addActionListener(null);
-            add(btnImpasti.get(i));
-        }
+        
+        
 
         lblImg = new JLabel("Immagine");
         add(lblImg);
@@ -72,12 +89,6 @@ public class PizzaGui extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         new PizzaGui();
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
     }
 
 }
