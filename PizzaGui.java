@@ -11,13 +11,13 @@ public class PizzaGui extends JFrame implements ActionListener {
 
     private String folderpath = "Condimenti\\";
 
-    private ArrayList<JButton> btnCarni;
+    private ArrayList<JButton> btnCarni = new ArrayList<>();
     private ArrayList<String> carni = readFile(folderpath + "Carni.txt");
-    private ArrayList<JButton> btnVerdure;
+    private ArrayList<JButton> btnVerdure = new ArrayList<>();
     private ArrayList<String> verdure = readFile(folderpath + "Verdure.txt");
-    private ArrayList<JButton> btnImpasti;
+    private ArrayList<JButton> btnImpasti = new ArrayList<>();
     private ArrayList<String> impasti = readFile(folderpath + "Impasti.txt");
-    private ArrayList<JButton> btnSalse;
+    private ArrayList<JButton> btnSalse = new ArrayList<>();
     private ArrayList<String> salse = readFile(folderpath + "Salse.txt");
 
     private JLabel lblImg;
