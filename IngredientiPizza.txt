@@ -1,0 +1,12 @@
+Pizza Normale
+Pizza Integrale
+Pizza Normale, Salsa
+Pizza Integrale, Salsa
+Pizza Normale, Salsa, Mozzarella
+Pizza Integrale, Salsa, Mozzarella
+Pizza Normale, Salsa, Mozzarella, Salame
+Pizza Integrale, Salsa, Mozzarella, Salame
+Pizza Normale, Salsa, Mozzarella, Prosciutto Cotto
+Pizza Integrale, Salsa, Mozzarella, Prosciutto Cotto
+Pizza Normale, Salsa, Mozzarella, Verdure
+Scegli gli ingredienti che preferisci.
