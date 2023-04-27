@@ -35,8 +35,11 @@ public class PizzaGui extends JFrame {
         super("Pizzeria Pummarola");
         setLayout(new BorderLayout());
 
+        lblImg = new JLabel();
+
         pnlN = new JPanel(new FlowLayout());
-        pnlC = new JPanel(new FlowLayout());
+        pnlC = new JPanel(new GridBagLayout());
+        pnlC.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         pnlS = new JPanel(new GridLayout(1, 3));
         pnlW = new JPanel(new BorderLayout());
 
@@ -44,10 +47,19 @@ public class PizzaGui extends JFrame {
         btnOk.setIcon(new ImageIcon("img\\Cmp\\TagliaPizza.png"));
         btnOk.setBackground(Color.GRAY);
         btnOk.setForeground(Color.WHITE);
+
         btnForno = new JButton("Cuoci in forno");
         btnForno.setIcon(new ImageIcon("img\\Cmp\\fuoco.png"));
         btnForno.setBackground(Color.GRAY);
         btnForno.setForeground(Color.WHITE);
+
+        btnCestino = new JButton(new ImageIcon("img\\Cmp\\cestino.png"));
+        btnCestino.addActionListener(e -> {
+            lblImg.setIcon(null);
+            pizza = "img\\Pizze\\Pizza";
+        });
+        btnCestino.setBackground(Color.yellow);
+        btnCestino.setMargin(new Insets(0, 0, 0, 0));
 
         t = new TimerSec(lblTimer);
 
@@ -68,8 +80,6 @@ public class PizzaGui extends JFrame {
         btnFormaggi = setBtn(btnFormaggi, formaggi);
         btnCarni = setBtn(btnCarni, carni);
         btnVerdure = setBtn(btnVerdure, verdure);
-
-        lblImg = new JLabel();
 
         btnOk.addActionListener(e -> {
             if (lblTimer.getText().equals("Prontaaa")) {
@@ -96,14 +106,6 @@ public class PizzaGui extends JFrame {
         pnlS.add(btnForno);
         pnlS.add(lblTimer);
         pnlS.add(btnOk);
-
-        btnCestino = new JButton(new ImageIcon("img\\Cmp\\cestino.png"));
-        btnCestino.addActionListener(e -> {
-            lblImg.setIcon(null);
-            pizza = "img\\Pizze\\Pizza";
-        });
-        btnCestino.setBackground(Color.yellow);
-        btnCestino.setMargin(new Insets(0, 0, 0, 0));
 
         pnlW.add(btnCestino, BorderLayout.SOUTH);
 
