@@ -1,0 +1,6 @@
+Pizza Normale
+Pizza Normale Salsa
+Pizza Normale Salsa Mozzarella
+Pizza Normale Salsa Mozzarella Salame
+Pizza Normale Salsa Mozzarella Salsiccia
+Pizza Normale Salsa Mozzarella Funghi
