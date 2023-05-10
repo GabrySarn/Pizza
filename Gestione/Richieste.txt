@@ -1,0 +1,6 @@
+"Vorrei solo una focaccia"
+"Vorrei una pizza con la salsiccia"
+"Vorrei una marinara senza acciughe, grazie!"
+"Fammi una pizza ai funghi"
+"Pizza margherita senza salsa, che non mi piace"
+"Pizza con salame senza salsa"
