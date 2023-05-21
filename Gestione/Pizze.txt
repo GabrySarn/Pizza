@@ -1,0 +1,32 @@
+Pizza Normale
+Pizza Normale Salsa
+Pizza Normale Mozzarella
+Pizza Normale Salsa Mozzarella
+Pizza Normale Salsiccia
+Pizza Normale Salsa Salsiccia
+Pizza Normale Mozzarella Salsiccia
+Pizza Normale Salsa Mozzarella Salsiccia
+Pizza Normale Salame
+Pizza Normale Salsa Salame
+Pizza Normale Mozzarella Salame
+Pizza Normale Salsa Mozzarella Salame
+Pizza Normale Funghi
+Pizza Normale Salsa Funghi
+Pizza Normale Mozzarella Funghi
+Pizza Normale Salsa Mozzarella Funghi
+Pizza Normale Peperoni
+Pizza Normale Salsa Peperoni
+Pizza Normale Mozzarella Peperoni
+Pizza Normale Salsa Mozzarella Peperoni
+Pizza Normale Olive
+Pizza Normale Salsa Olive
+Pizza Normale Mozzarella Olive
+Pizza Normale Salsa Mozzarella Olive
+Pizza Normale Cipolle
+Pizza Normale Salsa Cipolle
+Pizza Normale Mozzarella Cipolle
+Pizza Normale Salsa Mozzarella Cipolle
+Pizza Normale Melanzane
+Pizza Normale Salsa Melanzane
+Pizza Normale Mozzarella Melanzane
+Pizza Normale Salsa Mozzarella Melanzane
